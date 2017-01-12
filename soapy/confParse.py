@@ -602,6 +602,8 @@ class AtmosConfig(ConfigObj):
                         ("subHarmonics",False),
                         ("L0", None),
                         ("randomScrns", False),
+                        ("singleScrns", False),
+                        ("infScrns", False),
                         ("tau0", None),
                         ]
 
@@ -920,11 +922,11 @@ class DmConfig(ConfigObj):
         ``gaussWidth``       float: Width of Guass DM actuator
                              as a fraction of the
                              inter-actuator spacing.             ``0.5``
-        ``altitude``         float: Altitude to which DM is 
+        ``altitude``         float: Altitude to which DM is
                              optically conjugated.               ``0``
-        ``diameter``         float: Diameter covered by DM in 
-                             metres. If ``None`` if telescope 
-                             diameter.                           ``None`` 
+        ``diameter``         float: Diameter covered by DM in
+                             metres. If ``None`` if telescope
+                             diameter.                           ``None``
         ==================== =================================   ===========
     """
 
